@@ -2,39 +2,39 @@
 	"pages": [
 
 		{
-			"path": "pages/index/index",
+			"path": "pages/invite/invite",
 			"style": {
 				// #ifdef MP 
-				"navigationBarTitleText": "Dloud商城",
+				"navigationBarTitleText": "加杰准装",
 				//"navigationStyle": "custom",
 				// #endif 
 				"app-plus": {
 					"titleNView": {
-						"type": "transparent",
-						"searchInput": {
-							"backgroundColor": "rgba(231, 231, 231,.7)",
-							"borderRadius": "16px",
-							"placeholder": "请输入地址 如：大钟寺",
-							"disabled": true,
-							"placeholderColor": "#606266"
-						},
-						"buttons": [{
-								"fontSrc": "/static/yticon.ttf",
-								"text": "\ue60d",
-								"fontSize": "26",
-								"color": "#303133",
-								"float": "left",
-								"background": "rgba(0,0,0,0)"
-							},
-							{
-								"fontSrc": "/static/yticon.ttf",
-								"text": "\ue744",
-								"fontSize": "27",
-								"color": "#303133",
-								"background": "rgba(0,0,0,0)",
-								"redDot": true
-							}
-						]
+						"type": "transparent"
+						// "searchInput": {
+						// 	"backgroundColor": "rgba(231, 231, 231,.7)",
+						// 	"borderRadius": "16px",
+						// 	"placeholder": "请输入地址 如：大钟寺",
+						// 	"disabled": true,
+						// 	"placeholderColor": "#606266"
+						// },
+						// "buttons": [{
+						// 		"fontSrc": "/static/yticon.ttf",
+						// 		"text": "\ue60d",
+						// 		"fontSize": "26",
+						// 		"color": "#303133",
+						// 		"float": "left",
+						// 		"background": "rgba(0,0,0,0)"
+						// 	},
+						// 	{
+						// 		"fontSrc": "/static/yticon.ttf",
+						// 		"text": "\ue744",
+						// 		"fontSize": "27",
+						// 		"color": "#303133",
+						// 		"background": "rgba(0,0,0,0)",
+						// 		"redDot": true
+						// 	}
+						// ]
 					}
 				}
 			}
@@ -86,24 +86,24 @@
 				"app-plus": {
 					"bounce": "none",
 					"titleNView": {
-						"type": "transparent",
-						"buttons": [{
-								"fontSrc": "/static/yticon.ttf",
-								"text": "\ue60f",
-								"fontSize": "24",
-								"color": "#303133",
-								"width": "46px",
-								"background": "rgba(0,0,0,0)"
-							},
-							{
-								"fontSrc": "/static/yticon.ttf",
-								"text": "\ue744",
-								"fontSize": "28",
-								"color": "#303133",
-								"background": "rgba(0,0,0,0)",
-								"redDot": true
-							}
-						]
+						"type": "transparent"
+						// "buttons": [{
+						// 		"fontSrc": "/static/yticon.ttf",
+						// 		"text": "\ue60f",
+						// 		"fontSize": "24",
+						// 		"color": "#303133",
+						// 		"width": "46px",
+						// 		"background": "rgba(0,0,0,0)"
+						// 	},
+						// 	{
+						// 		"fontSrc": "/static/yticon.ttf",
+						// 		"text": "\ue744",
+						// 		"fontSize": "28",
+						// 		"color": "#303133",
+						// 		"background": "rgba(0,0,0,0)",
+						// 		"redDot": true
+						// 	}
+						// ]
 					}
 				}
 			}
@@ -176,6 +176,12 @@
 				"enablePullDownRefresh": true,
 				"navigationBarTitleText": "商品列表"
 			}
+        } ,{
+            "path" : "pages/invite/add",
+            "style" : {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "邀请"
+			}
         }
     ],
 	"globalStyle": {
@@ -189,23 +195,36 @@
 		"selectedColor": "#fa436a",
 		"borderStyle": "black",
 		"backgroundColor": "#ffffff",
+		// "list": [{
+		// 		"pagePath": "pages/index/index",
+		// 		"iconPath": "static/tab-home.png",
+		// 		"selectedIconPath": "static/tab-home-current.png",
+		// 		"text": "首页"
+		// 	},
+		// 	{
+		// 		"pagePath": "pages/category/category",
+		// 		"iconPath": "static/tab-cate.png",
+		// 		"selectedIconPath": "static/tab-cate-current.png",
+		// 		"text": "分类"
+		// 	},
+		// 	{
+		// 		"pagePath": "pages/cart/cart",
+		// 		"iconPath": "static/tab-cart.png",
+		// 		"selectedIconPath": "static/tab-cart-current.png",
+		// 		"text": "购物车"
+		// 	},
+		// 	{
+		// 		"pagePath": "pages/user/user",
+		// 		"iconPath": "static/tab-my.png",
+		// 		"selectedIconPath": "static/tab-my-current.png",
+		// 		"text": "我的"
+		// 	}
+		// ]
 		"list": [{
-				"pagePath": "pages/index/index",
+				"pagePath": "pages/invite/invite",
 				"iconPath": "static/tab-home.png",
 				"selectedIconPath": "static/tab-home-current.png",
 				"text": "首页"
-			},
-			{
-				"pagePath": "pages/category/category",
-				"iconPath": "static/tab-cate.png",
-				"selectedIconPath": "static/tab-cate-current.png",
-				"text": "分类"
-			},
-			{
-				"pagePath": "pages/cart/cart",
-				"iconPath": "static/tab-cart.png",
-				"selectedIconPath": "static/tab-cart-current.png",
-				"text": "购物车"
 			},
 			{
 				"pagePath": "pages/user/user",
